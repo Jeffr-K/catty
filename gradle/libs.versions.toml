@@ -1,0 +1,80 @@
+[versions]
+kotlin = "1.9.25"
+springBoot = "3.4.3"
+dependencyManagement = "1.1.7"
+hibernate = "6.6.8.Final"
+graalvmNative = "0.10.5"
+springCloudContract = "4.2.0"
+asciidoctor = "3.3.2"
+springModulith = "1.3.3"
+testcontainers = "1.19.7"
+springAmqp = "3.1.4"
+springBatch = "5.2.1"
+springRestdocs = "3.0.1"
+postgresql = "42.7.2"
+jackson = "2.17.0"
+micrometer = "1.13.1"
+junit = "1.10.2"
+unboundid = "6.0.11"
+
+[libraries]
+# Kotlin
+kotlin-reflect = { module = "org.jetbrains.kotlin:kotlin-reflect", version.ref = "kotlin" }
+kotlin-test-junit5 = { module = "org.jetbrains.kotlin:kotlin-test-junit5", version.ref = "kotlin" }
+
+# Spring Boot
+springBoot-starter-actuator = { module = "org.springframework.boot:spring-boot-starter-actuator", version.ref = "springBoot" }
+springBoot-starter-amqp = { module = "org.springframework.boot:spring-boot-starter-amqp", version.ref = "springBoot" }
+springBoot-starter-batch = { module = "org.springframework.boot:spring-boot-starter-batch", version.ref = "springBoot" }
+springBoot-starter-cache = { module = "org.springframework.boot:spring-boot-starter-cache", version.ref = "springBoot" }
+springBoot-starter-dataJpa = { module = "org.springframework.boot:spring-boot-starter-data-jpa", version.ref = "springBoot" }
+springBoot-starter-jdbc = { module = "org.springframework.boot:spring-boot-starter-jdbc", version.ref = "springBoot" }
+springBoot-starter-jooq = { module = "org.springframework.boot:spring-boot-starter-jooq", version.ref = "springBoot" }
+springBoot-starter-mail = { module = "org.springframework.boot:spring-boot-starter-mail", version.ref = "springBoot" }
+springBoot-starter-quartz = { module = "org.springframework.boot:spring-boot-starter-quartz", version.ref = "springBoot" }
+springBoot-starter-validation = { module = "org.springframework.boot:spring-boot-starter-validation", version.ref = "springBoot" }
+springBoot-starter-web = { module = "org.springframework.boot:spring-boot-starter-web", version.ref = "springBoot" }
+springBoot-devtools = { module = "org.springframework.boot:spring-boot-devtools", version.ref = "springBoot" }
+springBoot-configuration-processor = { module = "org.springframework.boot:spring-boot-configuration-processor", version.ref = "springBoot" }
+springBoot-starter-test = { module = "org.springframework.boot:spring-boot-starter-test", version.ref = "springBoot" }
+springBoot-testcontainers = { module = "org.springframework.boot:spring-boot-testcontainers", version.ref = "springBoot" }
+
+# Spring Cloud
+springCloud-config-server = { module = "org.springframework.cloud:spring-cloud-config-server", version.ref = "springCloudContract" }
+springCloud-starter-contract-stub-runner = { module = "org.springframework.cloud:spring-cloud-starter-contract-stub-runner", version.ref = "springCloudContract" }
+springCloud-starter-contract-verifier = { module = "org.springframework.cloud:spring-cloud-starter-contract-verifier", version.ref = "springCloudContract" }
+
+# Spring Modulith
+springModulith-events-api = { module = "org.springframework.modulith:spring-modulith-events-api", version.ref = "springModulith" }
+springModulith-starter-core = { module = "org.springframework.modulith:spring-modulith-starter-core", version.ref = "springModulith" }
+springModulith-starter-jpa = { module = "org.springframework.modulith:spring-modulith-starter-jpa", version.ref = "springModulith" }
+springModulith-actuator = { module = "org.springframework.modulith:spring-modulith-actuator", version.ref = "springModulith" }
+springModulith-events-amqp = { module = "org.springframework.modulith:spring-modulith-events-amqp", version.ref = "springModulith" }
+springModulith-observability = { module = "org.springframework.modulith:spring-modulith-observability", version.ref = "springModulith" }
+springModulith-starter-test = { module = "org.springframework.modulith:spring-modulith-starter-test", version.ref = "springModulith" }
+
+# Spring AMQP
+spring-rabbit-stream = { module = "org.springframework.amqp:spring-rabbit-stream", version.ref = "springAmqp" }
+spring-rabbit-test = { module = "org.springframework.amqp:spring-rabbit-test", version.ref = "springAmqp" }
+
+# Spring Batch
+spring-batch-test = { module = "org.springframework.batch:spring-batch-test", version.ref = "springBatch" }
+
+# Spring Rest Docs
+spring-restdocs-mockmvc = { module = "org.springframework.restdocs:spring-restdocs-mockmvc", version.ref = "springRestdocs" }
+
+# Database
+postgresql = { module = "org.postgresql:postgresql", version.ref = "postgresql" }
+
+# Jackson
+jackson-module-kotlin = { module = "com.fasterxml.jackson.module:jackson-module-kotlin", version.ref = "jackson" }
+
+# Micrometer
+micrometer-registry-prometheus = { module = "io.micrometer:micrometer-registry-prometheus", version.ref = "micrometer" }
+
+# Testing
+testcontainers-junit-jupiter = { module = "org.testcontainers:junit-jupiter", version.ref = "testcontainers" }
+testcontainers-postgresql = { module = "org.testcontainers:postgresql", version.ref = "testcontainers" }
+testcontainers-rabbitmq = { module = "org.testcontainers:rabbitmq", version.ref = "testcontainers" }
+junit-platform-launcher = { module = "org.junit.platform:junit-platform-launcher", version.ref = "junit" }
+unboundid-ldapsdk = { module = "com.unboundid:unboundid-ldapsdk", version.ref = "unboundid" }
